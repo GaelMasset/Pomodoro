@@ -1,21 +1,31 @@
 h1{
     text-align: center;
     font-size: 5em;
+    font-family: "Trirong", serif;
 }
 body{
     background-image: url('fondvache.jpg');
+    background-size: cover;
 }
 
-#imagepomodoro{
-    display: block;
-   margin-left: auto;
-   margin-right: auto;
-    width: 35%;
+.titrehaut{
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
+    border: 10px solid #0d0e0b;
+
 }
 
-#boutonstart{
+#soleil{
+  width: 100%;
+}
+.bouton{
+    width: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hauteur{
+    height: 50%;
 }

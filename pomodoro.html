@@ -4,17 +4,38 @@
         <title>POMODORO</title>
         <meta charset="utf-8">
         <script src="pomodoscript.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
         <link href="style.css" rel="stylesheet">
+
 
     </head>
 
     <body>
-        <h1>Podomoro de Gael !!!</h1>
-        <h1 id="compteur">25:00</h1>
-        <img src="soleil.png" alt="soleil" id="imagepomodoro">
-       
-        <button><img src="nuagestart.jpg" alt="boutonstart" id="boutonstart" onClick="startPomodoro()"></button>
-
+        <div class="container mt-5 titrehaut">
+            <div class="row">
+                <div class="col-1"></div> <!-- Réduire la colonne vide -->
+                <div class="col-10"> <!-- Augmenter la taille de la colonne contenant le texte -->
+                    <h1>Podomoro de Gael !!!</h1>
+                    <h1 id="compteur">25:00</h1>
+                </div>
+                <div class="col-1"></div> <!-- Réduire la colonne vide -->
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row hauteur">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <!-- L'image du soleil occupe environ 75% de la largeur de la colonne -->
+                    <img src="soleil.png" alt="soleil" id="soleil" class="w-75">
+                </div>
+                <div class="col-2"></div>
+            </div>
+            
+            <!-- Bouton start réduit à environ 50% de la largeur du conteneur -->
+            <img src="playbutton.png" alt="boutonstart" class="w-50" id="boutonstart" onClick="startPomodoro()">
+        </div>
     </body>
 
 </html>
