@@ -1,31 +1,63 @@
-h1{
+h1 {
     text-align: center;
-    font-size: 5em;
+    font-size: 3em;
     font-family: "Trirong", serif;
 }
-body{
+
+body {
     background-image: url('fondvache.jpg');
     background-size: cover;
 }
 
-.titrehaut{
+.titrehaut {
     border-radius: 25px;
     background: #73AD21;
     padding: 20px;
     border: 10px solid #0d0e0b;
-
+    margin-bottom: 30px;
 }
 
-#soleil{
-  width: 100%;
-}
-.bouton{
-    width: 50%;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
+#soleil {
+    max-height: 100%;
+    max-width: 100%;
 }
 
-.hauteur{
-    height: 50%;
+#boutonStart{
+    width: 10%;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation: rotation 10s infinite linear; /* 2s est la durée d'une rotation complète */
+}
+
+.contourBouton{
+    border-radius: 1000px;
+    background: #502c0a;
+    padding: 20px;
+    border: 10px solid #0d0e0b;
+}
+
+.contourSoleil{
+    border-radius: 1000px;
+    background: #7fdadd;
+    padding: 20px;
+    border: 10px solid #ffffff;
+    margin-bottom: 30px;
+}
+.centered-text {
+    margin-top: -50%; /* Permet de faire monter le texte pour qu'il soit superposé à l'image */
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1; /* Place le texte au-dessus de l'image */
 }

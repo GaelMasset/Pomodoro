@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    //A faire : En dessous du temps : afficher temps choisi
+    // A Droite : choix du temps
+    //RReagir quand ca atteint 0 
     <head>
         <title>POMODORO</title>
         <meta charset="utf-8">
@@ -7,35 +10,41 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
         <link href="style.css" rel="stylesheet">
-
-
     </head>
 
     <body>
         <div class="container mt-5 titrehaut">
             <div class="row">
-                <div class="col-1"></div> <!-- Réduire la colonne vide -->
-                <div class="col-10"> <!-- Augmenter la taille de la colonne contenant le texte -->
+                <div class="col-1"></div>
+                <div class="col-10">
                     <h1>Podomoro de Gael !!!</h1>
-                    <h1 id="compteur">25:00</h1>
+                    <h1 id="texteOrdre">Appuie sur le bouton pour démarrer.</h1>
                 </div>
-                <div class="col-1"></div> <!-- Réduire la colonne vide -->
+                <div class="col-1"></div>
             </div>
         </div>
         
-        <div class="container">
-            <div class="row hauteur">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <!-- L'image du soleil occupe environ 75% de la largeur de la colonne -->
-                    <img src="soleil.png" alt="soleil" id="soleil" class="w-75">
-                </div>
-                <div class="col-2"></div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-2 left-div"></div>
+            <div class="col-2 left-div">
+                <h1 class="centered-text contourSoleil" id="compteur">25 : 00</h1>
             </div>
+
             
-            <!-- Bouton start réduit à environ 50% de la largeur du conteneur -->
-            <img src="playbutton.png" alt="boutonstart" class="w-50" id="boutonstart" onClick="startPomodoro()">
+            <div class="col-4 d-flex justify-content-center">
+                <img src="soleil.png" alt="soleil" id="soleil" class="img-fluid w-50 contourSoleil">
+            </div>
+
+            
+            <div class="col-2 right-div">
+                <p class="centered-text">Choix temps</p>
+            </div>
+            <div class="col-2 right-div"></div>
+        </div>
+
+        
+        <div class="container d-flex justify-content-center">
+            <img src="playbutton.png" alt="boutonstart" class="img-fluid w-25 contourBouton" id="boutonstart" onClick="startPomodoro()">
         </div>
     </body>
-
 </html>
