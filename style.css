@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    font-size: 5em;
+}
+body{
+    background-image: url('fondvache.jpg');
+}
+
+#imagepomodoro{
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+    width: 35%;
+}
+
+#boutonstart{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
