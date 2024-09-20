@@ -52,6 +52,8 @@ body {
     padding: 20px;
     border: 10px solid #ffffff;
     margin-bottom: 30px;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 .centered-text {
     margin-top: -50%; /* Permet de faire monter le texte pour qu'il soit superposé à l'image */
@@ -60,4 +62,19 @@ body {
     font-weight: bold;
     text-align: center;
     z-index: 1; /* Place le texte au-dessus de l'image */
+}
+
+.right-div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /* Dispose les éléments verticalement */
+}
+
+.right-div button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    background-color: white; /* Couleur de fond blanche */
+    border: 10px solid black; /* Contour noir de 10px */
+    border-radius: 15px; /* Bords arrondis */
 }
