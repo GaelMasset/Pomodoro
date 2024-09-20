@@ -49,15 +49,32 @@ function updateCompteur(){
         document.getElementById("texteOrdre").innerHTML = "Appuies sur le bouton pour commencer"
     }
 
+    document.getElementById("tpsEtude").innerHTML = Math.floor(tempsEtudeChoisi/60) + " : " + tempsEtudeChoisi%60;
+    document.getElementById("tpsPause").innerHTML = Math.floor(tempsPauseChoisi/60) + " : " + tempsPauseChoisi%60;
+
+
+
     
 }
 
-function plusTemps(){
+function plusTempsEtude(){
     tempsEtudeChoisi += 60;
     updateCompteur();
 }
 
-function moinsTemps(){
+function moinsTempsEtude(){
     tempsEtudeChoisi -= 60;
     updateCompteur();
 }
+
+function plusTempsPause(){
+    tempsPauseChoisi += 15;
+    updateCompteur();
+}
+
+function moinsTempsPause(){
+    tempsPauseChoisi -= 15;
+    updateCompteur();
+}
+
+

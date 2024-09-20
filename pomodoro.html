@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-    //A faire : En dessous du temps : afficher temps choisi
-    // A Droite : choix du temps
-    //RReagir quand ca atteint 0 
+
     <head>
         <title>POMODORO</title>
         <meta charset="utf-8">
@@ -24,24 +22,57 @@
             </div>
         </div>
         
-        <div class="row justify-content-center align-items-center contourSoleil">
-            <div class="col-2 left-div"></div>
-            <div class="col-2 left-div">
-                <h1 class="centered-text" id="compteur">25 : 00</h1>
+        <div class="contourSoleil">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-2 left-div">
+
+                </div>
+                <div class="col-2 left-div">
+                    <h1 class="centered-text" id="compteur">25 : 00</h1>
+                </div>
+
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="soleil.png" alt="soleil" id="soleil" class="img-fluid w-50">
+                </div>
+                
+                <div class="col-2 right-div">
+                </div>
+                <div class="col-2 right-div"></div>
             </div>
 
-            
-            <div class="col-4 d-flex justify-content-center">
-                <img src="soleil.png" alt="soleil" id="soleil" class="img-fluid w-50">
-            </div>
 
-            
-            <div class="col-2 right-div">
-                <h2>Choisir le temps d'étude</h2>
-                <button onclick="plusTemps()"><h2>+</h2></button>
-                <button onclick="moinsTemps()"><h2>-</h2></button>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-4 left-div">
+                    <h1>Temps d'étude : <br></h1><h1 id="tpsEtude">25 : 00</h1>
+                </div>
+    
+                <div class="col-4 d-flex justify-content-center">
+                    <button onClick="plusTempsEtude()"><h2>+</h2></button>
+                    <button onClick="moinsTempsEtude()"><h2>-</h2></button>
+                </div>
+                
+                <div class="col-2">
+                    
+                </div>
+                <div class="col-2 right-div"></div>
             </div>
-            <div class="col-2 right-div"></div>
+            
+            <div class="row justify-content-center align-items-center">
+                <div class="col-4 left-div">
+                    <h1>Temps de pause : <br></h1><h1 id="tpsPause">25 : 00</h1>
+                </div>
+    
+                <div class="col-4 d-flex justify-content-center">
+                    <button onClick="plusTempsPause()"><h2>+</h2></button>
+                    <button onClick="moinsTempsPause()"><h2>-</h2></button>
+                </div>
+                
+                <div class="col-2">
+                    
+                </div>
+                <div class="col-2 right-div"></div>
+            </div>
+            
         </div>
 
         

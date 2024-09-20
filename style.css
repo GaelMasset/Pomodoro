@@ -11,7 +11,7 @@ body {
 
 .titrehaut {
     border-radius: 25px;
-    background: #73AD21;
+    background: #c6eaa4;
     padding: 20px;
     border: 10px solid #0d0e0b;
     margin-bottom: 30px;
@@ -47,10 +47,10 @@ body {
 }
 
 .contourSoleil{
-    border-radius: 1000px;
-    background: #7fdadd;
+    border-radius: 25px;
+    background: #d5d5d5;
     padding: 20px;
-    border: 10px solid #ffffff;
+    border: 10px solid #000000;
     margin-bottom: 30px;
     margin-left: 5em;
     margin-right: 5em;
@@ -64,7 +64,7 @@ body {
     z-index: 1; /* Place le texte au-dessus de l'image */
 }
 
-.right-div {
+.enColonne {
     display: flex;
     justify-content: space-between;
     flex-direction: column; /* Dispose les éléments verticalement */
