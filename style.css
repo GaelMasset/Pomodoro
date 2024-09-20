@@ -39,13 +39,6 @@ body {
     animation: rotation 10s infinite linear; /* 2s est la durée d'une rotation complète */
 }
 
-.contourBouton{
-    border-radius: 1000px;
-    background: #502c0a;
-    padding: 20px;
-    border: 10px solid #0d0e0b;
-}
-
 .contourSoleil{
     border-radius: 25px;
     background: #d5d5d5;
@@ -55,6 +48,7 @@ body {
     margin-left: 5em;
     margin-right: 5em;
 }
+
 .centered-text {
     margin-top: -50%; /* Permet de faire monter le texte pour qu'il soit superposé à l'image */
     color: black;
@@ -70,11 +64,18 @@ body {
     flex-direction: column; /* Dispose les éléments verticalement */
 }
 
-.right-div button {
+.beaubouton {
     flex: 1;
     margin: 0 5px;
     padding: 10px;
     background-color: white; /* Couleur de fond blanche */
     border: 10px solid black; /* Contour noir de 10px */
     border-radius: 15px; /* Bords arrondis */
+}
+
+.beaubouton:hover{
+    background-color: rgb(255, 245, 104);
+}
+.beaubouton:active{
+    background-color: rgb(160, 255, 151);
 }

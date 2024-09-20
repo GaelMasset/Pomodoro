@@ -1,5 +1,5 @@
 let tempsEtudeChoisi = 600;
-let tempsPauseChoisi = 20;
+let tempsPauseChoisi = 15;
 
 let decompte = tempsEtudeChoisi;
 let actif = false;
@@ -63,6 +63,7 @@ function plusTempsEtude(){
 }
 
 function moinsTempsEtude(){
+    if(tempsEtudeChoisi <=60) return;
     tempsEtudeChoisi -= 60;
     updateCompteur();
 }
@@ -73,6 +74,7 @@ function plusTempsPause(){
 }
 
 function moinsTempsPause(){
+    if(tempsPauseChoisi<=15) return;
     tempsPauseChoisi -= 15;
     updateCompteur();
 }
