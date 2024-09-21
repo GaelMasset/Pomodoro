@@ -36,7 +36,7 @@ body {
 }
 
 .rotate {
-    animation: rotation 10s infinite linear; /* 2s est la durée d'une rotation complète */
+    animation: rotation 10s infinite linear;
 }
 
 .contourSoleil{
@@ -50,27 +50,27 @@ body {
 }
 
 .centered-text {
-    margin-top: -50%; /* Permet de faire monter le texte pour qu'il soit superposé à l'image */
+    margin-top: -50%;
     color: black;
     font-size: 3em;
     font-weight: bold;
     text-align: center;
-    z-index: 1; /* Place le texte au-dessus de l'image */
+    z-index: 1;
 }
 
 .enColonne {
     display: flex;
     justify-content: space-between;
-    flex-direction: column; /* Dispose les éléments verticalement */
+    flex-direction: column;
 }
 
 .beaubouton {
     flex: 1;
     margin: 0 5px;
     padding: 10px;
-    background-color: white; /* Couleur de fond blanche */
-    border: 10px solid black; /* Contour noir de 10px */
-    border-radius: 15px; /* Bords arrondis */
+    background-color: white;
+    border: 10px solid black;
+    border-radius: 15px;
 }
 
 .beaubouton:hover{
@@ -78,4 +78,8 @@ body {
 }
 .beaubouton:active{
     background-color: rgb(160, 255, 151);
+}
+
+.boutonPlay:hover{
+    background-color: #b7b7b7;
 }

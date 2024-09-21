@@ -11,11 +11,15 @@ function startPomodoro(){
         auTravail = true;
         var image = document.getElementById("soleil");
         image.classList.add("rotate");
+        var image = document.getElementById("boutonstart");
+        image.src = "reset.jpg";
     }else{
         actif = false;
         var image = document.getElementById("soleil");
         image.classList.remove("rotate");
         auTravail=false;
+        var image = document.getElementById("boutonstart");
+        image.src = "play-button.png";
     }
     updateCompteur();
 }
@@ -29,10 +33,10 @@ function updateCompteur(){
         decompte --;
         texte = Math.floor(decompte/60) + " : " + decompte%60;
         document.getElementById("compteur").innerHTML = texte;
-        if(decompte < 0 && auTravail){
+        if(decompte <= 0 && auTravail){
             decompte = tempsPauseChoisi;
             auTravail = false;
-        } else if (decompte < 0 && !auTravail){
+        } else if (decompte <= 0 && !auTravail){
             decompte = tempsEtudeChoisi;
             auTravail = true;
         }
@@ -58,13 +62,13 @@ function updateCompteur(){
 }
 
 function plusTempsEtude(){
-    tempsEtudeChoisi += 60;
+    tempsEtudeChoisi += 30;
     updateCompteur();
 }
 
 function moinsTempsEtude(){
-    if(tempsEtudeChoisi <=60) return;
-    tempsEtudeChoisi -= 60;
+    if(tempsEtudeChoisi <=30) return;
+    tempsEtudeChoisi -= 30;
     updateCompteur();
 }
 
