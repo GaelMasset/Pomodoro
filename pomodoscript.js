@@ -12,14 +12,14 @@ function startPomodoro(){
         var image = document.getElementById("soleil");
         image.classList.add("rotate");
         var image = document.getElementById("boutonstart");
-        image.src = "reset.jpg";
+        image.src = "resetbutton.jpg";
     }else{
         actif = false;
         var image = document.getElementById("soleil");
         image.classList.remove("rotate");
         auTravail=false;
         var image = document.getElementById("boutonstart");
-        image.src = "play-button.png";
+        image.src = "playbutton.png";
     }
     updateCompteur();
 }

@@ -1,8 +1,11 @@
 h1 {
     text-align: center;
-    font-size: 3em;
-    font-family: "Trirong", serif;
+    font-size: 2em;
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    
 }
+
 
 body {
     background-image: url('fondvache.jpg');
@@ -10,10 +13,9 @@ body {
 }
 
 .titrehaut {
-    border-radius: 25px;
     background: #c6eaa4;
     padding: 20px;
-    border: 10px solid #0d0e0b;
+    border: 5px solid #0d0e0b;
     margin-bottom: 30px;
 }
 
@@ -43,7 +45,7 @@ body {
     border-radius: 25px;
     background: #d5d5d5;
     padding: 20px;
-    border: 10px solid #000000;
+    border: 5px solid #000000;
     margin-bottom: 30px;
     margin-left: 5em;
     margin-right: 5em;
@@ -69,7 +71,7 @@ body {
     margin: 0 5px;
     padding: 10px;
     background-color: white;
-    border: 10px solid black;
+    border: 5px solid black;
     border-radius: 15px;
 }
 
@@ -81,5 +83,6 @@ body {
 }
 
 .boutonPlay:hover{
-    background-color: #b7b7b7;
+    background-color: #3e3e3e;
+    border-radius: 100000px;
 }
