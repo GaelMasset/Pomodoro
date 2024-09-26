@@ -83,11 +83,7 @@ body{
     z-index: 1;
 }
 
-.enColonne {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
+
 
 .beaubouton {
     flex: 1;
