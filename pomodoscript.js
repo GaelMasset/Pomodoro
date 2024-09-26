@@ -48,6 +48,7 @@ function updateCompteur(){
         }
     }
     else {
+        document.getElementById("premierBloc").style.backgroundColor = "#52796F";
         decompte = tempsEtudeChoisi;
         texte = Math.floor(decompte/60) + " : " + decompte%60;
         document.getElementById("compteur").innerHTML = texte;

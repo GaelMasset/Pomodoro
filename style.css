@@ -1,11 +1,18 @@
 h1 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5vw;
     font-family: "Playwrite DE Grund", cursive;
     font-optical-sizing: auto;
+    color:white
     
 }
 
+
+
+#compteur{
+    font-size: 5vw;
+    font-weight: bolder;
+}
 
 body {
     background-image: url('fondvache.jpg');
@@ -28,14 +35,6 @@ body {
     width: 10%;
 }
 
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 .rotate {
     animation: rotation 10s infinite linear;
