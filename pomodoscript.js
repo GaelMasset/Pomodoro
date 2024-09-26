@@ -1,9 +1,15 @@
-let tempsEtudeChoisi = 600;
-let tempsPauseChoisi = 15;
+
 let image;
-let decompte = tempsEtudeChoisi;
 let actif = false;
 let auTravail = false;
+
+//Decompte permet de faire le suivi en direct
+//tempsXChoisi permet de se souvenir des options
+let tempsEtudeChoisi = 600;
+let tempsPauseChoisi = 15;
+let decompte = tempsEtudeChoisi;
+
+//La variable image sert dans plusieurs fonctions, elle 
 
 function startPomodoro(){
     if(!actif){
@@ -15,9 +21,9 @@ function startPomodoro(){
     }else{
         actif = false;
         auTravail=false;
-        image = document.getElementById("boutonPlay");
-        image.classList.add('fa-play');
-        image.classList.remove('fa-rotate-right');
+        
+        document.getElementById("boutonPlay").classList.add('fa-play');
+        document.getElementById("boutonPlay").classList.remove('fa-rotate-right');
     }
     updateCompteur();
 }
@@ -62,6 +68,10 @@ function updateCompteur(){
     
 }
 
+
+/*
+Fonctions qui permettent d'augmenter / de réduire le temps d'étude / de pause
+*/
 function plusTempsEtude(){
     if(tempsEtudeChoisi > 7170) return;
     tempsEtudeChoisi += 30;
