@@ -1,21 +1,11 @@
-p {
-    text-align: center;
-    font-size: 1.5vw;
-    font-family: "Playwrite DE Grund", cursive;
-    font-optical-sizing: auto;
-    color:white
-    
-}
-
-body{
+body {
     height: 100%;
     width: 100%;
     background-image: url('fondvache.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
     background-position: center;
+    color: white;
 }
 
 .topper {
@@ -25,65 +15,28 @@ body{
     margin-bottom: 30px;
 }
 
-
-
-.centrer{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto; 
-}
-
-#compteur{
-    font-size: 3vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-weight: bolder;
-    color:#000000
-}
-.decocompteur{
-    background-color: aliceblue;
-    border-radius: 5vw;
-    border: 5px solid #0d0e0b;
-
-}
-
-
-
-
-#soleil {
-    max-height: 100%;
-    max-width: 100%;
-}
-
-#boutonStart{
-    width: 10%;
-}
-
-
-
-.decodiv{
+.decodiv {
     border-radius: 25px;
     background: #52796F;
     padding: 20px;
     border: 5px solid #000000;
-    margin-bottom: 30px;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin: 0 1em 30px 1em; /* Réduit la marge pour mobile */
 }
 
-.centered-text {
-    margin-top: -50%;
-    color: black;
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
-    z-index: 1;
+.text-center p {
+    font-size: 1.5rem; /* Utiliser une taille plus relative */
+    font-family: "Playwrite DE Grund", cursive;
 }
 
+#compteur {
+    font-size: 3rem; /* Plus grand sur mobile */
+    font-weight: bolder;
+    color: #000000;
+}
 
+.boutonPlay {
+    margin: 20px 0; /* Ajoute un espacement vertical */
+}
 
 .beaubouton {
     flex: 1;
@@ -94,19 +47,6 @@ body{
     border-radius: 15px;
 }
 
-.beaubouton:hover{
-    background-color: #84A98C;
-}
-.beaubouton:active{
-    background-color: #CAD2C5;
-}
-
-.boutonPlay{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto; 
-}
-.boutonPlay:hover{
+.beaubouton:hover {
     background-color: #CAD2C5;
 }

@@ -9,14 +9,10 @@ function startPomodoro(){
     if(!actif){
         actif = true;
         auTravail = true;
-        var image = document.getElementById("soleil");
-        image.classList.add("rotate");
         var image = document.getElementById("boutonstart");
         image.src = "reloadbutton.png";
     }else{
         actif = false;
-        var image = document.getElementById("soleil");
-        image.classList.remove("rotate");
         auTravail=false;
         var image = document.getElementById("boutonstart");
         image.src = "playbutton.png";
