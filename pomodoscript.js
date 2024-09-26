@@ -12,7 +12,7 @@ function startPomodoro(){
         var image = document.getElementById("soleil");
         image.classList.add("rotate");
         var image = document.getElementById("boutonstart");
-        image.src = "resetbutton.jpg";
+        image.src = "reloadbutton.png";
     }else{
         actif = false;
         var image = document.getElementById("soleil");
@@ -64,6 +64,7 @@ function updateCompteur(){
 }
 
 function plusTempsEtude(){
+    if(tempsEtudeChoisi > 7170) return;
     tempsEtudeChoisi += 30;
     updateCompteur();
 }
@@ -75,6 +76,7 @@ function moinsTempsEtude(){
 }
 
 function plusTempsPause(){
+    if(tempsPauseChoisi > 7170) return;
     tempsPauseChoisi += 15;
     updateCompteur();
 }

@@ -1,4 +1,4 @@
-h1 {
+p {
     text-align: center;
     font-size: 1.5vw;
     font-family: "Playwrite DE Grund", cursive;
@@ -7,24 +7,51 @@ h1 {
     
 }
 
-
-
-#compteur{
-    font-size: 5vw;
-    font-weight: bolder;
-}
-
-body {
+body{
+    height: 100%;
+    width: 100%;
     background-image: url('fondvache.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
 }
 
-.titrehaut {
+.topper {
     background: #354F52;
     padding: 20px;
     border: 5px solid #0d0e0b;
     margin-bottom: 30px;
 }
+
+
+
+.centrer{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto; 
+}
+
+#compteur{
+    font-size: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bolder;
+    color:#000000
+}
+.decocompteur{
+    background-color: aliceblue;
+    border-radius: 5vw;
+    border: 5px solid #0d0e0b;
+
+}
+
+
+
 
 #soleil {
     max-height: 100%;
@@ -36,11 +63,8 @@ body {
 }
 
 
-.rotate {
-    animation: rotation 10s infinite linear;
-}
 
-.contourSoleil{
+.decodiv{
     border-radius: 25px;
     background: #52796F;
     padding: 20px;
@@ -81,7 +105,12 @@ body {
     background-color: #CAD2C5;
 }
 
+.boutonPlay{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto; 
+}
 .boutonPlay:hover{
     background-color: #CAD2C5;
-    border-radius: 100000px;
 }
