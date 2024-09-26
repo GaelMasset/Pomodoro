@@ -25,27 +25,37 @@
         <div class="text-center">
             <p id="texteOrdre">Appuies sur le bouton pour commencer</p>
             <p id="compteur">10 : 0</p>
-            <i class="fa-solid fa-play fa-6x boutonPlay" onClick="startPomodoro()"></i>
-            <i class="fa-solid fa-rotate-right fa-6x"></i>
+            <i class="fa-solid fa-play fa-6x" id="boutonPlay" onClick="startPomodoro()"></i>
         </div>
     </div>
 
     <div class="decodiv">
         <div class="text-center">
-            <p>Temps d'étude :</p>
-            <p id="tpsEtude">10 : 0</p>
-            <div class="d-flex justify-content-center">
-                <button onClick="plusTempsEtude()" class="beaubouton btn btn-secondary btn-sm mx-1">+</button>
-                <button onClick="moinsTempsEtude()" class="beaubouton btn btn-secondary btn-sm mx-1">-</button>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mb-4">
+                <div class="text-center me-3">
+                    <p>Temps d'étude :</p>
+                    <p id="tpsEtude">10 : 0</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button onClick="plusTempsEtude()" class="beaubouton btn btn-secondary btn-sm mx-1">+</button>
+                    <button onClick="moinsTempsEtude()" class="beaubouton btn btn-secondary btn-sm mx-1">-</button>
+                </div>
             </div>
-            <p>Temps de pause :</p>
-            <p id="tpsPause">0 : 15</p>
-            <div class="d-flex justify-content-center">
-                <button onClick="plusTempsPause()" class="beaubouton btn btn-secondary btn-sm mx-1">+</button>
-                <button onClick="moinsTempsPause()" class="beaubouton btn btn-secondary btn-sm mx-1">-</button>
+            
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+                <div class="text-center me-3">
+                    <p>Temps de pause :</p>
+                    <p id="tpsPause">0 : 15</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button onClick="plusTempsPause()" class="beaubouton btn btn-secondary btn-sm mx-1">+</button>
+                    <button onClick="moinsTempsPause()" class="beaubouton btn btn-secondary btn-sm mx-1">-</button>
+                </div>
             </div>
         </div>
     </div>
+    
+    
 </body>
 
 </html>

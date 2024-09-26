@@ -9,13 +9,15 @@ function startPomodoro(){
     if(!actif){
         actif = true;
         auTravail = true;
-        var image = document.getElementById("boutonstart");
-        image.src = "reloadbutton.png";
+        var image = document.getElementById("boutonPlay");
+        image.classList.remove('fa-play');
+        image.classList.add('fa-rotate-right');
     }else{
         actif = false;
         auTravail=false;
-        var image = document.getElementById("boutonstart");
-        image.src = "playbutton.png";
+        var image = document.getElementById("boutonPlay");
+        image.classList.add('fa-play');
+        image.classList.remove('fa-rotate-right');
     }
     updateCompteur();
 }
