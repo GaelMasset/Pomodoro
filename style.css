@@ -27,19 +27,10 @@ body {
     margin: 0 1em 30px 1em;
 }
 
-.text-center p {
-    font-size: 1.5rem; /* Utiliser une taille plus relative */
-    font-family: "Playwrite DE Grund", cursive;
-}
-
 #compteur {
-    font-size: 3rem; /* Plus grand sur mobile */
+    font-size: 3rem;
     font-weight: bolder;
     color: #000000;
-}
-
-.boutonPlay {
-    margin: 20px 0; /* Ajoute un espacement vertical */
 }
 
 .beaubouton {

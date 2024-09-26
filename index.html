@@ -2,9 +2,11 @@
 <html lang="fr">
 
 <head>
-    <title>POMODORO</title>
+    <title>POMODORO GAEL</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Insertion CSS, JS, Bootstrap, Google Fonts, et FontAwesome -->
     <script src="pomodoscript.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
@@ -15,42 +17,46 @@
 </head>
 
 <body>
+
+    <!-- Barre du haut, qui affiche mon nom -->
     <div class="topper">
         <div class="text-center">
             <p>Pomodoro de Gael !!!</p>
         </div>
     </div>
 
+    <!-- Le premier bloc, contenant l'instruction, ainsi que le timer et le bouton principal -->
     <div class="decodiv" id="premierBloc">
         <div class="text-center">
             <p id="texteOrdre">Appuies sur le bouton pour commencer</p>
             <p id="compteur">10 : 0</p>
-            <i class="fa-solid fa-play fa-5x noir" id="boutonPlay" onClick="startPomodoro()"></i>
+            <strong class="fa-solid fa-play fa-5x noir" id="boutonPlay" onClick="startPomodoro()"></strong>
         </div>
     </div>
 
+    <!-- Deuxieme bloc, contenant les deux timers avec leur boutons respectifs -->
     <div class="decodiv">
-        <div class="text-center">
-            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mb-4">
-                <div class="text-center me-3">
-                    <p>Temps d'étude :</p>
-                    <p id="tpsEtude">10 : 0</p>
-                </div>
-                <div class="d-flex align-items-center">
-                    <button onClick="plusTempsEtude()" class="beaubouton btn btn-secondary btn-sm mx-1">+</button>
-                    <button onClick="moinsTempsEtude()" class="beaubouton btn btn-secondary btn-sm mx-1">-</button>
-                </div>
+        <!-- Partie temps d'étude -->
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <div class="text-center me-3">
+                <p>Temps d'étude :</p>
+                <p id="tpsEtude">10 : 0</p>
             </div>
-            
-            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
-                <div class="text-center me-3">
-                    <p>Temps de pause :</p>
-                    <p id="tpsPause">0 : 15</p>
-                </div>
-                <div class="d-flex align-items-center">
-                    <button onClick="plusTempsPause()" class="beaubouton btn btn-secondary btn-sm mx-1">+</button>
-                    <button onClick="moinsTempsPause()" class="beaubouton btn btn-secondary btn-sm mx-1">-</button>
-                </div>
+            <div class="d-flex align-items-center">
+                <button onClick="plusTempsEtude()" class="beaubouton btn btn-secondary btn-sm mx-1">+</button>
+                <button onClick="moinsTempsEtude()" class="beaubouton btn btn-secondary btn-sm mx-1">-</button>
+            </div>
+        </div>
+        
+        <!-- Partie Temps de pause -->
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <div class="text-center me-3">
+                <p>Temps de pause :</p>
+                <p id="tpsPause">0 : 15</p>
+            </div>
+            <div class="d-flex align-items-center">
+                <button onClick="plusTempsPause()" class="beaubouton btn btn-secondary btn-sm mx-1">+</button>
+                <button onClick="moinsTempsPause()" class="beaubouton btn btn-secondary btn-sm mx-1">-</button>
             </div>
         </div>
     </div>
