@@ -42,8 +42,9 @@ function updateCompteur(){
         }
         if(auTravail){
             document.getElementById("texteOrdre").innerHTML = "Au travail !!!"
+            document.getElementById("premierBloc").style.backgroundColor = "RED";
         } else {
-            document.getElementById("texteOrdre").innerHTML = "Tu peux te reposer !"
+            document.getElementById("premierBloc").style.backgroundColor = "GREEN";
         }
     }
     else {
