@@ -1,6 +1,6 @@
 let tempsEtudeChoisi = 600;
 let tempsPauseChoisi = 15;
-
+let image;
 let decompte = tempsEtudeChoisi;
 let actif = false;
 let auTravail = false;
@@ -9,13 +9,13 @@ function startPomodoro(){
     if(!actif){
         actif = true;
         auTravail = true;
-        var image = document.getElementById("boutonPlay");
+        image = document.getElementById("boutonPlay");
         image.classList.remove('fa-play');
         image.classList.add('fa-rotate-right');
     }else{
         actif = false;
         auTravail=false;
-        var image = document.getElementById("boutonPlay");
+        image = document.getElementById("boutonPlay");
         image.classList.add('fa-play');
         image.classList.remove('fa-rotate-right');
     }
@@ -39,9 +39,10 @@ function updateCompteur(){
             auTravail = true;
         }
         if(auTravail){
-            document.getElementById("texteOrdre").innerHTML = "Au travail !!!"
+            document.getElementById("texteOrdre").innerHTML = "Au travail !!! (╯°□°）╯︵ ┻━┻";
             document.getElementById("premierBloc").style.backgroundColor = "RED";
         } else {
+            document.getElementById("texteOrdre").innerHTML = "Vous pouvez vous reposer (⌐■_■)"; 
             document.getElementById("premierBloc").style.backgroundColor = "GREEN";
         }
     }
@@ -50,7 +51,7 @@ function updateCompteur(){
         decompte = tempsEtudeChoisi;
         texte = Math.floor(decompte/60) + " : " + decompte%60;
         document.getElementById("compteur").innerHTML = texte;
-        document.getElementById("texteOrdre").innerHTML = "Appuies sur le bouton pour commencer"
+        document.getElementById("texteOrdre").innerHTML = "Appuies sur le bouton pour commencer";
     }
 
     document.getElementById("tpsEtude").innerHTML = Math.floor(tempsEtudeChoisi/60) + " : " + tempsEtudeChoisi%60;
